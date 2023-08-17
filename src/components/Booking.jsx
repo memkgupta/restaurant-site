@@ -2,7 +2,7 @@ import React from 'react'
 
 function Booking() {
   return (
-    <div className="bg-slate-900 min-h-screen  items-center px-48 py-12">
+    <div id='book' className="bg-slate-900 min-h-screen  items-center px-48 py-12">
         <h1 className='text-center text-3xl text-orange-100 mb-12'>Book Your Table</h1>
     <form className="bg-white  p-8 rounded-lg shadow-md w-full">
     

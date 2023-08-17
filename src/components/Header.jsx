@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <div  className=' w-full md:flex flex-row-reverse  justify-around bg-cover bg-center bg-[url("/src/assets/header_img.jpg")]'
+    <div id='home'  className=' w-full md:flex flex-row-reverse  justify-around bg-cover bg-center bg-[url("/src/assets/header_img.jpg")]'
     style={{ height: "auto",minHeight:'100vh' }}>
 <div className="bg-slate-900 bg-opacity-60 w-full  grid content-center" style={{minHeight:'100vh'}} >
   <div className='mt-auto mb-auto' >

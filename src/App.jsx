@@ -7,11 +7,20 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 
 function App() {
-
+  const handleScrollTo = (id) => {
+    const element = document.getElementById(id);
+    
+    console.log(id)
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth',
+      });
+  
+  };
 
   return (
  <BrowserRouter>
- <Navbar></Navbar>
+ <Navbar scrollFunction={handleScrollTo}></Navbar>
  <Routes>
   <Route path='/' element={<Home></Home>}></Route>
  </Routes>

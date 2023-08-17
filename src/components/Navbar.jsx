@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Logo from '../assets/Logo'
 import logo from '../assets/logo.png'
 import SideBar from './SideBar';
-function Navbar() {
+function Navbar({scrollFunction}) {
   const [isOpacity,setOpacity] = useState(false);
   useEffect(()=>{
     window.addEventListener('scroll',()=>{
@@ -29,17 +29,17 @@ function Navbar() {
      <nav className='text-white' >
           
             <div className='flex'>
-              <Link className='mx-3  body-font hover:text-teal-500 transition-color ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 '>Home</Link>
-              <Link className='mx-3 body-font hover:text-teal-500 transition-color ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 '>Menu</Link>
-              <Link className='mx-3 body-font hover:text-teal-500 transition-color ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 '>Book Now</Link>
-              <Link className='mx-3 body-font hover:text-teal-500 transition-color ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 '>Contact</Link>
-              <Link className='mx-3 body-font hover:text-teal-500 transition-color ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 '>About</Link>
+              <Link onClick={(e)=>{scrollFunction("home")}} className='mx-3  body-font hover:text-teal-500 transition-color ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 '>Home</Link>
+              <Link onClick={(e)=>{scrollFunction("menu")}} className='mx-3 body-font hover:text-teal-500 transition-color ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 '>Menu</Link>
+              <Link onClick={(e)=>{scrollFunction("book")}} className='mx-3 body-font hover:text-teal-500 transition-color ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 '>Book Now</Link>
+              <Link onClick={(e)=>{scrollFunction("contact")}} className='mx-3 body-font hover:text-teal-500 transition-color ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 '>Contact</Link>
+              <Link onClick={(e)=>{scrollFunction("about")}} className='mx-3 body-font hover:text-teal-500 transition-color ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 '>About</Link>
             </div>
             </nav>
-            <div><button className='bg-green-400 p-3 hover:bg-green-700'>Book Now</button></div>
+            <div><button onClick={(e)=>{scrollFunction("book")}} className='bg-green-400 p-3 hover:bg-green-700'>Book Now</button></div>
       
   </div>
-  <SideBar></SideBar>
+  <SideBar scrollFunction={scrollFunction}></SideBar>
 </>
    
 
