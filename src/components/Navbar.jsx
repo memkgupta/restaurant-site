@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../assets/Logo'
 import logo from '../assets/logo.png'
+import SideBar from './SideBar';
 function Navbar() {
   const [isOpacity,setOpacity] = useState(false);
   useEffect(()=>{
@@ -19,7 +20,8 @@ function Navbar() {
     })
   },[])
   return (
-  <div className={`hidden fixed w-full md:flex  justify-around z-40  items-center bg-slate-900 ${isOpacity?'bg-opacity-100':'bg-opacity-50'}`} >
+<>
+<div className={`hidden fixed w-full md:flex  justify-around z-40  items-center bg-slate-900 ${isOpacity?'bg-opacity-100':'bg-opacity-50'}`} >
        <div> <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
         <img src={logo} className='w-24 h-24' alt="" />
       <span class="ml-3 text-xl text-white">TastyBites</span>
@@ -37,6 +39,8 @@ function Navbar() {
             <div><button className='bg-green-400 p-3 hover:bg-green-700'>Book Now</button></div>
       
   </div>
+  <SideBar></SideBar>
+</>
    
 
   )

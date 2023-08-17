@@ -4,7 +4,7 @@ function Contact() {
   return (
     <section class="bg-slate-900 text-gray-600 body-font relative">
       <h1 className="text-3xl text-orange-100 text-center pt-5">Contact us</h1>
-    <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+    <div class="container px-5 py-24 mx-auto md:flex sm:flex-nowrap flex-wrap">
       <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
         <iframe width="100%" height="100%" class="absolute inset-0"  style={{
     filter: 'grayscale(1)',

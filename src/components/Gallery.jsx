@@ -20,8 +20,8 @@ function Gallery() {
         autoplay:true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4
+        slidesToShow: 2,
+        slidesToScroll: 2
       };
   return (
    <section className='bg-slate-900 p-24'>

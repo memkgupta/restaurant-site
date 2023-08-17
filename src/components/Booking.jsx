@@ -16,14 +16,14 @@ function Booking() {
           placeholder="Your Name"
         />
       </div>
-      <div className="mb-4  flex justify-around">
+      <div className="mb-4  md:flex justify-around">
      <div className='grid w-3/6 mx-4'>
      <label className="text-sm font-medium text-gray-700 mb-1">
           Email
         </label>
         <input
           type="email"
-          className="border border-gray-300 rounded-md px-3 py-2  focus:outline-none focus:border-green-500"
+          className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:border-green-500"
           placeholder="you@example.com"
         />
      </div>
@@ -34,7 +34,7 @@ function Booking() {
         <input
           type="tel"
           
-          className="border border-gray-300 rounded-md  p-3 focus:outline-none focus:border-green-500"
+          className="border border-gray-300 rounded-md w-full  p-3 focus:outline-none focus:border-green-500"
           placeholder="Your Phone Number" required
         />
      </div>
